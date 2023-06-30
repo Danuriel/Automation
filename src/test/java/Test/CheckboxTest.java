@@ -24,28 +24,4 @@ public class CheckboxTest extends TestBase {
         Assertions.assertTrue(checkboxPage.getCheckBoxOne().isSelected());
         Assertions.assertTrue(checkboxPage.getCheckBoxTwo().isSelected());
     }
-
-    @Test
-    public void tickCheckboxes2() {
-        checkboxPage.getDriver().navigate().to("https://the-internet.herokuapp.com/checkboxes");
-
-//        checkboxPage.isChecked(checkboxPage.getCheckBoxOne());
-        if (checkboxPage.getCheckBoxOne().getAttribute("checked") == null) {
-            checkboxPage.getCheckBoxOne().click();
-        }
-        Assertions.assertTrue(checkboxPage.getCheckBoxOne().isSelected());
-        Assertions.assertTrue(checkboxPage.getCheckBoxTwo().isSelected());
-    }
-
-    @Test
-    public void tickCheckboxes3() {
-        checkboxPage.getDriver().navigate().to("https://the-internet.herokuapp.com/checkboxes");
-
-//        checkboxPage.isChecked(checkboxPage.getCheckBoxOne());
-        if (checkboxPage.getCheckBoxOne().getAttribute("checked") == null) {
-            checkboxPage.getCheckBoxOne().click();
-        }
-        Assertions.assertTrue(checkboxPage.getCheckBoxOne().isSelected());
-        Assertions.assertTrue(checkboxPage.getCheckBoxTwo().isSelected());
-    }
 }
